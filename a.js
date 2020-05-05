@@ -9,4 +9,4 @@ else el.src=src;fn?fn():null}
 img.src=src}
 function elementInViewport(el){var rect=el.getBoundingClientRect()
 return(rect.top>=0&&rect.left>=0&&rect.top<=(window.innerHeight||document.documentElement.clientHeight))}
-var images=new Array(),query=$q('.recents img'),processScroll=function(){for(var i=0;i<images.length;i++){if(elementInViewport(images[i])){loadImage(images[i],function(){images.splice(i,i)})}}};for(var i=0;i<query.length;i++){images.push(query[i])};processScroll();addEventListener('scroll',processScroll)});}
+var images=new Array(),query=$q('.recents img'),processScroll=function(){for(var i=0;i<images.length;i++){if(elementInViewport(images[i])){loadImage(images[i],function(){images.splice(i,i)})}}};for(var i=0;i<query.length;i++){images.push(query[i])};processScroll();addEventListener('scroll',processScroll)});$(document).ready(function(){var js=document.createElement('script');js.async=!0;js.src='https://cdn.jsdelivr.net/gh/bsgospel/static@6.b/ga.js';js.defer=!0;$("footer").append(js)});}
